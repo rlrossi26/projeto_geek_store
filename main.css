@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f0eded;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(177, 124, 27);
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#about {
+    margin-bottom: 100px;
+}
+
+#about .container {
+    display: flex;
+}
+
+#about h2,
+#products h2 {
+    color: rgb(177, 124, 27);
+    border-bottom: 1px solid rgb(177, 124, 27);
+    padding: 0 0 20px 0;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#about img {
+    width: 400px;
+    margin-right: 30px;
+}
+
+#products ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+#products ul li {
+    list-style: none;
+}
+
+#products ul li h3 {
+    padding: 20px 0;
+}
+
+#products ul li button {
+    background-color: rgb(177, 124, 27);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+#products ul li button:hover {
+    background-color: rgb(131, 90, 14);
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        justify-content: space-around;
+    }
+
+    #about {
+        margin-bottom: 20px;
+    }
+
+    header nav a {
+        display: block;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #products ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+    }
+
+    #products ul li {
+        margin-bottom: 30px;
+    }
+
+    #products ul li img{
+        width: 100%;
+    }
+}
+
+
+
