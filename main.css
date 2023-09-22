@@ -88,6 +88,19 @@ header nav a {
 
 }
 
+.menu-options a{
+    display: none;
+}
+
+footer {
+    background-color: rgb(177, 124, 27);
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 767px) {
 
     .container {
@@ -95,7 +108,16 @@ header nav a {
     }
 
     header .container {
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .menu-options a{
+        display: inline;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0 10px;
     }
 
     #about {
@@ -103,6 +125,10 @@ header nav a {
     }
 
     header nav a {
+        display: none;
+    }
+
+    .navbar-burger span{
         display: block;
     }
 
@@ -128,6 +154,48 @@ header nav a {
 
     #products ul li img{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header nav a {
+        font-size: 1.2em;
+    }
+
+    #about h2,
+    #products h2 {
+        font-size: 2em;
+    }
+
+    #products h3 {
+        font-size: 1.7em;
+    }
+
+    #about p,
+    #products ul li p {
+        font-size: 1.4em;
+    }
+
+    #products ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #products ul li img {
+        width: 100%;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about .container {
+        flex-direction: column;
     }
 }
 
